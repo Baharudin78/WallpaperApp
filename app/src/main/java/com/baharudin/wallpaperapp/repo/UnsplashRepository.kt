@@ -6,10 +6,11 @@ import androidx.paging.PagingConfig
 import androidx.paging.liveData
 import com.baharudin.wallpaperapp.api.UnsplashService
 import com.baharudin.wallpaperapp.data.UnsplashPagingSource
+import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class UnsplashRepository @ViewModelInject constructor(
+class UnsplashRepository @Inject constructor(
     private val unsplashService: UnsplashService
     ) {
 
